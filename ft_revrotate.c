@@ -1,46 +1,50 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_rotate.c                                        :+:      :+:    :+:   */
+/*   ft_revrotate.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jacarpio <jacarpio@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/17 20:50:21 by jacarpio          #+#    #+#             */
-/*   Updated: 2026/03/17 21:53:17 by jacarpio         ###   ########.fr       */
+/*   Updated: 2026/03/17 21:30:57 by jacarpio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void	ft_rotate(t_stack **stack)
+void	ft_revrotate(t_stack **stack)
 {
-	t_stack	*last;
+	t_stack	*new_last;
+	t_stack *old_last;
 
 	if (!stack || !*stack || !(*stack)->next)
 		return ;
-	last = *stack;
-	while (last->next != NULL)
-		last = last->next;
-	last->next = *stack;
-	*stack = (*stack)->next;
-	last->next->next = NULL;
+	old_last = *stack;
+	while (old_tail->next != NULL)
+	{
+		new_last = old_last;
+		old_last = old_last-> next;
+	}
+	old_last->next = *stack;
+	new_last->next = NULL;
+	*stack = old_last;
 }
 
-void	ft_ra(t_stack **stack_a)
+void	ft_rra(t_stack **stack_a)
 {
-	ft_rotate(stack);
-	write (1, "ra\n", 3);
+	ft_revrotate(stack);
+	write (1, "rra\n", 4);
 }
 
-void	ft_rb(t_stack **stack_b)
+void	ft_rrb(t_stack **stack_b)
 {
-	ft_rotate(stack);
-	write (1, "rb\n", 3);
+	ft_revrotate(stack);
+	write (1, "rrb\n", 4);
 }
 
-void	ft_rr(t_stack **stack_a, t_stack **stack_b)
+void	ft_rrr(t_stack **stack_a, t_stack **stack_b)
 {
-	ft_rotate(stack_a);
-	ft_rotate(stack_b);
-	write(1, "rr\n", 3);
+	ft_revrotate(stack_a);
+	ft_revrotate(stack_b);
+	write(1, "rrr\n", 4);
 }

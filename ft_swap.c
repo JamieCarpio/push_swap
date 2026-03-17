@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_swap.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jamie_ubuntu <jamie_ubuntu@student.42.f    +#+  +:+       +#+        */
+/*   By: jacarpio <jacarpio@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/03/16 16:12:02 by jamie_ubunt       #+#    #+#             */
-/*   Updated: 2026/03/16 17:04:16 by jamie_ubunt      ###   ########.fr       */
+/*   Created: 2026/03/16 16:12:02 by jacarpio          #+#    #+#             */
+/*   Updated: 2026/03/17 20:58:22 by jacarpio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
