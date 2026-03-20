@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_rotate.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jacarpio <jacarpio@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: jamie_ubuntu <jamie_ubuntu@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/17 20:50:21 by jacarpio          #+#    #+#             */
-/*   Updated: 2026/03/17 21:53:17 by jacarpio         ###   ########.fr       */
+/*   Updated: 2026/03/20 14:33:15 by jamie_ubunt      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,27 +14,29 @@
 
 void	ft_rotate(t_stack **stack)
 {
-	t_stack	*last;
+	t_stack *first;
+	t_stack *last;
 
 	if (!stack || !*stack || !(*stack)->next)
 		return ;
+	first = *stack;
 	last = *stack;
-	while (last->next != NULL)
+	while (last->next)
 		last = last->next;
-	last->next = *stack;
-	*stack = (*stack)->next;
-	last->next->next = NULL;
+	*stack = first->next;
+	first->next = NULL;
+	last->next = first;
 }
 
 void	ft_ra(t_stack **stack_a)
 {
-	ft_rotate(stack);
+	ft_rotate(stack_a);
 	write (1, "ra\n", 3);
 }
 
 void	ft_rb(t_stack **stack_b)
 {
-	ft_rotate(stack);
+	ft_rotate(stack_b);
 	write (1, "rb\n", 3);
 }
 

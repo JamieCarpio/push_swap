@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_revrotate.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jacarpio <jacarpio@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: jamie_ubuntu <jamie_ubuntu@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/17 20:50:21 by jacarpio          #+#    #+#             */
-/*   Updated: 2026/03/17 21:30:57 by jacarpio         ###   ########.fr       */
+/*   Updated: 2026/03/19 00:12:52 by jamie_ubunt      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ void	ft_revrotate(t_stack **stack)
 	if (!stack || !*stack || !(*stack)->next)
 		return ;
 	old_last = *stack;
-	while (old_tail->next != NULL)
+	while (old_last->next != NULL)
 	{
 		new_last = old_last;
 		old_last = old_last-> next;
@@ -32,13 +32,13 @@ void	ft_revrotate(t_stack **stack)
 
 void	ft_rra(t_stack **stack_a)
 {
-	ft_revrotate(stack);
+	ft_revrotate(stack_a);
 	write (1, "rra\n", 4);
 }
 
 void	ft_rrb(t_stack **stack_b)
 {
-	ft_revrotate(stack);
+	ft_revrotate(stack_b);
 	write (1, "rrb\n", 4);
 }
 

@@ -1,37 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_push.c                                          :+:      :+:    :+:   */
+/*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jamie_ubuntu <jamie_ubuntu@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/03/17 21:07:21 by jacarpio          #+#    #+#             */
-/*   Updated: 2026/03/20 14:33:18 by jamie_ubunt      ###   ########.fr       */
+/*   Created: 2026/01/13 19:40:53 by jacarpio          #+#    #+#             */
+/*   Updated: 2026/03/20 18:33:23 by jamie_ubunt      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void	ft_push(t_stack **stack_from, t_stack **stack_to)
+int	ft_isdigit(int c)
 {
-	t_stack	*tmp;
-
-	if (!stack_from || !*stack_from)
-		return ;
-	tmp = *stack_from;
-	*stack_from = (*stack_from)->next;
-	tmp->next = *stack_to;
-	*stack_to = tmp;
-}
-
-void	ft_pa(t_stack **stack_a, t_stack **stack_b)
-{
-	ft_push(stack_b, stack_a);
-	write(1, "pa\n", 3);
-}
-
-void	ft_pb(t_stack **stack_a, t_stack **stack_b)
-{
-	ft_push(stack_a, stack_b);
-	write(1, "pb\n", 3);
+	if ((c >= '0' && c <= '9'))
+		return (1);
+	return (0);
 }
