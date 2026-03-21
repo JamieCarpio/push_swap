@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_rotate.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jamie_ubuntu <jamie_ubuntu@student.42.f    +#+  +:+       +#+        */
+/*   By: jacarpio <jacarpio@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/17 20:50:21 by jacarpio          #+#    #+#             */
-/*   Updated: 2026/03/20 22:46:37 by jamie_ubunt      ###   ########.fr       */
+/*   Updated: 2026/03/21 21:55:07 by jacarpio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

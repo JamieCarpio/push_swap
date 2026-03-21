@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jamie_ubuntu <jamie_ubuntu@student.42.f    +#+  +:+       +#+        */
+/*   By: jacarpio <jacarpio@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/13 19:40:53 by jacarpio          #+#    #+#             */
-/*   Updated: 2026/03/20 18:33:23 by jamie_ubunt      ###   ########.fr       */
+/*   Updated: 2026/03/21 21:55:15 by jacarpio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
