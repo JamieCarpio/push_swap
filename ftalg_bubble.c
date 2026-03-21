@@ -1,6 +1,6 @@
 #include "push_swap.h"
 
-void	ft_bubble_sort(t_stack **a)
+void	ft_bubble_sort(t_stack **a, t_bench *bench)
 {
 	int	size;
 	int	i;
@@ -19,14 +19,14 @@ void	ft_bubble_sort(t_stack **a)
 		{
 			if ((*a)->index > (*a)->next->index)
 			{
-				ft_sa(a);      // Intercambiar si están desordenados
+				ft_sa(a, bench);      // Intercambiar si están desordenados
 				swaps++;
 			}
-			ft_ra(a);          // Rotar al siguiente par
+			ft_ra(a, bench);          // Rotar al siguiente par
 		}
 		// Después de cada pasada, traemos los elementos rotados al inicio
 		for (int k = 0; k < size - i - 1; k++)
-			ft_rra(a);
+			ft_rra(a, bench);
 
 		// Si no hubo swaps en toda la pasada, el stack ya está ordenado
 		if (swaps == 0)

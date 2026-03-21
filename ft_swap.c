@@ -6,7 +6,7 @@
 /*   By: jamie_ubuntu <jamie_ubuntu@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/16 16:12:02 by jacarpio          #+#    #+#             */
-/*   Updated: 2026/03/19 00:12:54 by jamie_ubunt      ###   ########.fr       */
+/*   Updated: 2026/03/20 22:46:42 by jamie_ubunt      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,21 +24,27 @@ void	ft_swap(t_stack **stack)
 	*stack = temp;
 }
 
-void	ft_sa(t_stack **stack_a)
+void ft_sa(t_stack **a, t_bench *bench)
 {
-	ft_swap(stack_a);
-	write(1, "sa\n", 3);
+    ft_swap(a);
+    write(1, "sa\n", 3);
+    bench->sa++;
+    bench->total++;
 }
 
-void	ft_sb(t_stack **stack_b)
+void	ft_sb(t_stack **stack_b, t_bench *bench)
 {
 	ft_swap(stack_b);
 	write(1, "sb\n", 3);
+	bench->sb++;
+    bench->total++;
 }
 
-void	ft_ss(t_stack **stack_a, t_stack **stack_b)
+void	ft_ss(t_stack **stack_a, t_stack **stack_b, t_bench *bench)
 {
 	ft_swap(stack_a);
 	ft_swap(stack_b);
 	write(1, "ss\n", 3);
+	bench->ss++;
+    bench->total++;
 }

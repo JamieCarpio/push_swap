@@ -22,7 +22,7 @@ static int	ft_find_max_pos(t_stack *stack)
 	return (pos);
 }
 
-static void	ft_push_back(t_stack **a, t_stack **b)
+static void	ft_push_back(t_stack **a, t_stack **b, t_bench *bench)
 {
 	int	pos;
 	int	size;
@@ -33,18 +33,18 @@ static void	ft_push_back(t_stack **a, t_stack **b)
 		size = ft_stack_size(*b);
 		if (pos <= size / 2)
 			while (pos-- > 0)
-				ft_rb(b);
+				ft_rb(b, bench);
 		else
 			while (pos < size)
 			{
-				ft_rrb(b);
+				ft_rrb(b, bench);
 				pos++;
 			}
-		ft_pa(a, b);
+		ft_pa(a, b, bench);
 	}
 }
 
-void	ft_chunk_sort(t_stack **a, t_stack **b)
+void	ft_chunk_sort(t_stack **a, t_stack **b, t_bench *bench)
 {
 	int	size;
 	int	chunk;
@@ -57,17 +57,17 @@ void	ft_chunk_sort(t_stack **a, t_stack **b)
 	{
 		if ((*a)->index <= i)
 		{
-			ft_pb(a, b);
-			ft_rb(b);
+			ft_pb(a, b, bench);
+			ft_rb(b, bench);
 			i++;
 		}
 		else if ((*a)->index <= i + chunk)
 		{
-			ft_pb(a, b);
+			ft_pb(a, b, bench);
 			i++;
 		}
 		else
-			ft_ra(a);
+			ft_ra(a, bench);
 	}
-	ft_push_back(a, b);
+	ft_push_back(a, b, bench);
 }

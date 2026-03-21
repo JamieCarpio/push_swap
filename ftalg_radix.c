@@ -12,7 +12,7 @@ static int	ft_get_max_bits(t_stack *stack)
 	return (bits);
 }
 
-void	ft_radix_sort(t_stack **a, t_stack **b)
+void	ft_radix_sort(t_stack **a, t_stack **b, t_bench *bench)
 {
 	int	i;
 	int	j;
@@ -28,13 +28,13 @@ void	ft_radix_sort(t_stack **a, t_stack **b)
 		while (j < size)
 		{
 			if ((((*a)->index >> i) & 1) == 1)
-				ft_ra(a);
+				ft_ra(a, bench);
 			else
-				ft_pb(a, b);
+				ft_pb(a, b, bench);
 			j++;
 		}
 		while (*b)
-			ft_pa(a, b);
+			ft_pa(a, b, bench);
 		i++;
 	}
 }

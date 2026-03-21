@@ -6,7 +6,7 @@
 #    By: jamie_ubuntu <jamie_ubuntu@student.42.f    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/01/26 18:01:44 by jacarpio          #+#    #+#              #
-#    Updated: 2026/03/20 20:47:27 by jamie_ubunt      ###   ########.fr        #
+#    Updated: 2026/03/20 21:32:21 by jamie_ubunt      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -33,7 +33,7 @@ SRC = \
 	ft_push.c \
 	ft_rotate.c \
 	ft_revrotate.c \
-	ftalg_adaptative.c \
+	ftalg_adaptive.c \
 	ftalg_bubble.c \
 	ftalg_chunk.c \
 	ftalg_radix.c \

@@ -3,22 +3,33 @@
 
 void ft_print_benchmark(t_stack *a, t_bench *bench, double disorder, const char *strategy_name)
 {
-    int size = 0;
-    t_stack *tmp = a;
+    if (!bench || !strategy_name)
+        return;
 
-    while (tmp)
+    printf("\n--- BENCHMARK ---\n");
+    printf("Disorder: %.2f\n", disorder);
+    printf("Strategy: %s\n", strategy_name);
+    printf("Total operations: %d\n", bench->total);
+    printf("sa: %d\n", bench->sa);
+    printf("sb: %d\n", bench->sb);
+    printf("ss: %d\n", bench->ss);
+    printf("pa: %d\n", bench->pa);
+    printf("pb: %d\n", bench->pb);
+    printf("ra: %d\n", bench->ra);
+    printf("rb: %d\n", bench->rb);
+    printf("rr: %d\n", bench->rr);
+    printf("rra: %d\n", bench->rra);
+    printf("rrb: %d\n", bench->rrb);
+    printf("rrr: %d\n", bench->rrr);
+
+    // Mostrar stack final
+    printf("Stack A final: ");
+    while (a)
     {
-        size++;
-        tmp = tmp->next;
+        printf("%d(index:%d)", a->value, a->index);
+        if (a->next)
+            printf(" -> ");
+        a = a->next;
     }
-
-    fprintf(stderr, "=== BENCHMARK ===\n");
-    fprintf(stderr, "Disorder: %.3f\n", disorder);
-    fprintf(stderr, "Size: %d\n", size);
-    fprintf(stderr, "Strategy: %s\n", strategy_name);
-    fprintf(stderr, "Total operations: %d\n", bench->total);
-    fprintf(stderr, "sa: %d, sb: %d, ss: %d\n", bench->sa, bench->sb, bench->ss);
-    fprintf(stderr, "pa: %d, pb: %d\n", bench->pa, bench->pb);
-    fprintf(stderr, "ra: %d, rb: %d, rr: %d\n", bench->ra, bench->rb, bench->rr);
-    fprintf(stderr, "rra: %d, rrb: %d, rrr: %d\n", bench->rra, bench->rrb, bench->rrr);
+    printf(" -> NULL\n");
 }

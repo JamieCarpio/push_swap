@@ -6,7 +6,7 @@
 /*   By: jamie_ubuntu <jamie_ubuntu@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/17 21:20:51 by jacarpio          #+#    #+#             */
-/*   Updated: 2026/03/20 20:45:42 by jamie_ubunt      ###   ########.fr       */
+/*   Updated: 2026/03/21 08:49:17 by jamie_ubunt      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,17 +29,10 @@ typedef struct s_stack
 
 typedef struct s_bench
 {
-    int sa;
-    int sb;
-    int ss;
-    int pa;
-    int pb;
-    int ra;
-    int rb;
-    int rr;
-    int rra;
-    int rrb;
-    int rrr;
+    int sa, sb, ss;
+    int pa, pb;
+    int ra, rb, rr;
+    int rra, rrb, rrr;
     int total;
 } t_bench;
 /* ================== STACK UTILS ================== */
@@ -55,30 +48,30 @@ double	ft_disorder(t_stack *a);
 /* ================== BASIC OPERATIONS ================== */
 
 void	ft_swap(t_stack **stack);
-void	ft_sa(t_stack **stack_a);
-void	ft_sb(t_stack **stack_b);
-void	ft_ss(t_stack **stack_a, t_stack **stack_b);
+void	ft_sa(t_stack **stack_a, t_bench *bench);
+void	ft_sb(t_stack **stack_b, t_bench *bench);
+void	ft_ss(t_stack **stack_a, t_stack **stack_b, t_bench *bench);
 
 void	ft_push(t_stack **stack_from, t_stack **stack_to);
-void	ft_pa(t_stack **stack_a, t_stack **stack_b);
-void	ft_pb(t_stack **stack_a, t_stack **stack_b);
+void	ft_pa(t_stack **stack_a, t_stack **stack_b, t_bench *bench);
+void	ft_pb(t_stack **stack_a, t_stack **stack_b, t_bench *bench);
 
 void	ft_rotate(t_stack **stack);
-void	ft_ra(t_stack **stack_a);
-void	ft_rb(t_stack **stack_b);
-void	ft_rr(t_stack **stack_a, t_stack **stack_b);
+void	ft_ra(t_stack **stack_a, t_bench *bench);
+void	ft_rb(t_stack **stack_b, t_bench *bench);
+void	ft_rr(t_stack **stack_a, t_stack **stack_b, t_bench *bench);
 
 void	ft_revrotate(t_stack **stack);
-void	ft_rra(t_stack **stack_a);
-void	ft_rrb(t_stack **stack_b);
-void	ft_rrr(t_stack **stack_a, t_stack **stack_b);
+void	ft_rra(t_stack **stack_a, t_bench *bench);
+void	ft_rrb(t_stack **stack_b, t_bench *bench);
+void	ft_rrr(t_stack **stack_a, t_stack **stack_b, t_bench *bench);
 
 /* ================== SORTING ================== */
 
-void	ft_bubble_sort(t_stack **a);
-void	ft_chunk_sort(t_stack **a, t_stack **b);
-void	ft_radix_sort(t_stack **a, t_stack **b);
-void	ft_adaptive_sort(t_stack **a, t_stack **b);
+void	ft_bubble_sort(t_stack **a, t_bench *bench);
+void	ft_chunk_sort(t_stack **a, t_stack **b, t_bench *bench);
+void	ft_radix_sort(t_stack **a, t_stack **b, t_bench *bench);
+void	ft_adaptive_sort(t_stack **a, t_stack **b, t_bench *bench);
 
 /* ================== INDEX ================== */
 
