@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   push_swap.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jacarpio <jacarpio@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: jamie_ubuntu <jamie_ubuntu@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/17 21:20:51 by jacarpio          #+#    #+#             */
-/*   Updated: 2026/03/21 21:54:54 by jacarpio         ###   ########.fr       */
+/*   Updated: 2026/03/22 19:12:15 by jamie_ubunt      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,8 +79,12 @@ void	ft_index_stack(t_stack *a);
 
 /* ================== PARSING ================== */
 
+/* ================== PARSING ================== */
+
 t_stack	*ft_init_stack(int argc, char **argv);
 
+char	**parse_args(int argc, char **argv);
+void	ft_free_split(char **split);
 void	ft_error(void);
 void	ft_check_input(int argc, char **argv);
 

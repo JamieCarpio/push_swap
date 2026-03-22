@@ -10,7 +10,6 @@ CFLAGS = -Wall -Wextra -Werror
 SRC = \
 	main.c \
 	ft_atol.c \
-	ft_isdigit.c \
 	ft_is_number.c \
 	ft_strcmp.c \
 	ft_check_input.c \
@@ -21,6 +20,8 @@ SRC = \
 	ft_disorder.c \
 	ft_duplicates.c \
 	ft_is_sorted.c \
+	ft_join_args.c \
+	ft_parse_args.c \
 	ft_swap.c \
 	ft_push.c \
 	ft_rotate.c \
@@ -29,10 +30,11 @@ SRC = \
 	ftalg_bubble.c \
 	ftalg_chunk.c \
 	ftalg_radix.c \
-	ft_benchmark.c
+	ft_benchmark.c 
 
-LIBFT_SRC = libft/ft_*.c
-FT_PRINTF_SRC = ft_printf/ft_*.c
+# 🔥 AQUÍ ESTÁ LA CLAVE
+LIBFT_SRC = $(wildcard libft/*.c)
+FT_PRINTF_SRC = $(wildcard ft_printf/*.c)
 
 OBJ = $(SRC:.c=.o)
 LIBFT_OBJ = $(LIBFT_SRC:.c=.o)
@@ -47,7 +49,7 @@ $(LIB_PRINTF_NAME): $(FT_PRINTF_OBJ)
 	$(AR) $(LIB_PRINTF_NAME) $(FT_PRINTF_OBJ)
 
 $(NAME): $(OBJ) $(LIB_NAME) $(LIB_PRINTF_NAME)
-	$(CC) $(CFLAGS) $(OBJ) $(LIB_NAME) $(LIB_PRINTF_NAME) -o $(NAME)
+	$(CC) $(CFLAGS) $(OBJ) $(LIB_NAME) $(LIB_PRINTF_NAME) -lm -o $(NAME)
 
 %.o: %.c push_swap.h
 	$(CC) $(CFLAGS) -c $< -o $@
