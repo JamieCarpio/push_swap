@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_stack_size.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jacarpio <jacarpio@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: jamie_ubuntu <jamie_ubuntu@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/21 21:53:18 by jacarpio          #+#    #+#             */
-/*   Updated: 2026/03/21 21:55:05 by jacarpio         ###   ########.fr       */
+/*   Updated: 2026/03/23 00:07:12 by jamie_ubunt      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_rotate.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jacarpio <jacarpio@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: jamie_ubuntu <jamie_ubuntu@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/17 20:50:21 by jacarpio          #+#    #+#             */
-/*   Updated: 2026/03/21 21:55:07 by jacarpio         ###   ########.fr       */
+/*   Updated: 2026/03/23 00:06:55 by jamie_ubunt      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 void	ft_rotate(t_stack **stack)
 {
-	t_stack *first;
-	t_stack *last;
+	t_stack	*first;
+	t_stack	*last;
 
 	if (!stack || !*stack || !(*stack)->next)
 		return ;
@@ -33,7 +33,7 @@ void	ft_ra(t_stack **stack_a, t_bench *bench)
 	ft_rotate(stack_a);
 	write (1, "ra\n", 3);
 	bench->ra++;
-    bench->total++;
+	bench->total++;
 }
 
 void	ft_rb(t_stack **stack_b, t_bench *bench)
@@ -41,7 +41,7 @@ void	ft_rb(t_stack **stack_b, t_bench *bench)
 	ft_rotate(stack_b);
 	write (1, "rb\n", 3);
 	bench->rb++;
-    bench->total++;
+	bench->total++;
 }
 
 void	ft_rr(t_stack **stack_a, t_stack **stack_b, t_bench *bench)
@@ -50,5 +50,5 @@ void	ft_rr(t_stack **stack_a, t_stack **stack_b, t_bench *bench)
 	ft_rotate(stack_b);
 	write(1, "rr\n", 3);
 	bench->rr++;
-    bench->total++;
+	bench->total++;
 }

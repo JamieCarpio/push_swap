@@ -6,7 +6,7 @@
 /*   By: jamie_ubuntu <jamie_ubuntu@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/21 21:52:53 by jacarpio          #+#    #+#             */
-/*   Updated: 2026/03/22 19:14:49 by jamie_ubunt      ###   ########.fr       */
+/*   Updated: 2026/03/23 02:03:12 by jamie_ubunt      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,4 +34,3 @@ void	ft_check_input(int argc, char **argv)
 	if (ft_duplicates(argv))
 		ft_error();
 }
-

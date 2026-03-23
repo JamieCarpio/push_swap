@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_disorder.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jacarpio <jacarpio@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: jamie_ubuntu <jamie_ubuntu@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/21 21:52:56 by jacarpio          #+#    #+#             */
-/*   Updated: 2026/03/21 21:55:20 by jacarpio         ###   ########.fr       */
+/*   Updated: 2026/03/22 21:05:42 by jamie_ubunt      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,8 @@ double	ft_disorder(t_stack *a)
 {
 	t_stack	*i;
 	t_stack	*j;
-	size_t		mistakes;
-	size_t		total_pairs;
+	size_t	mistakes;
+	size_t	total_pairs;
 
 	mistakes = 0;
 	total_pairs = 0;

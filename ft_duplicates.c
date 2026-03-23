@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_duplicates.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jacarpio <jacarpio@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: jamie_ubuntu <jamie_ubuntu@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/21 21:52:58 by jacarpio          #+#    #+#             */
-/*   Updated: 2026/03/21 21:55:19 by jacarpio         ###   ########.fr       */
+/*   Updated: 2026/03/22 21:05:55 by jamie_ubunt      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

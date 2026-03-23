@@ -6,35 +6,13 @@
 /*   By: jamie_ubuntu <jamie_ubuntu@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/22 15:02:48 by sbouzian          #+#    #+#             */
-/*   Updated: 2026/03/22 19:17:13 by jamie_ubunt      ###   ########.fr       */
+/*   Updated: 2026/03/23 01:52:10 by jamie_ubunt      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 #include "libft/libft.h"
 
-static int	count_words(char **split)
-{
-	int	i;
-
-	i = 0;
-	while (split[i])
-		i++;
-	return (i);
-}
-
-static void	copy_words(char **dst, char **src, int *k)
-{
-	int	i;
-
-	i = 0;
-	while (src[i])
-	{
-		dst[*k] = ft_strdup(src[i]);
-		(*k)++;
-		i++;
-	}
-}
 void	ft_free_split(char **split)
 {
 	int	i;
@@ -48,35 +26,58 @@ void	ft_free_split(char **split)
 	free(split);
 }
 
-char	**parse_args(int argc, char **argv)
+static int	total_words(int argc, char **argv)
 {
-	char	**result;
-	char	**split;
-	int		total;
 	int		i;
-	int		k;
+	int		total;
+	char	**split;
+	int		j;
 
-	total = 0;
 	i = 1;
+	total = 0;
 	while (i < argc)
 	{
-		split = ft_split(argv[i], ' ');
-		total += count_words(split);
+		split = ft_split(argv[i++], ' ');
+		j = 0;
+		while (split[j])
+		{
+			total++;
+			j++;
+		}
 		ft_free_split(split);
-		i++;
 	}
-	result = malloc(sizeof(char *) * (total + 1));
-	if (!result)
-		return (NULL);
+	return (total);
+}
+
+static void	fill_result(char **result, int argc, char **argv)
+{
+	int		i;
+	int		k;
+	char	**split;
+	int		j;
+
 	i = 1;
 	k = 0;
 	while (i < argc)
 	{
-		split = ft_split(argv[i], ' ');
-		copy_words(result, split, &k);
+		split = ft_split(argv[i++], ' ');
+		j = 0;
+		while (split[j])
+			result[k++] = ft_strdup(split[j++]);
 		ft_free_split(split);
-		i++;
 	}
 	result[k] = NULL;
+}
+
+char	**parse_args(int argc, char **argv)
+{
+	char	**result;
+	int		total;
+
+	total = total_words(argc, argv);
+	result = malloc(sizeof(char *) * (total + 1));
+	if (!result)
+		return (NULL);
+	fill_result(result, argc, argv);
 	return (result);
 }

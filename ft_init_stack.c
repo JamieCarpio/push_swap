@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_init_stack.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jacarpio <jacarpio@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: jamie_ubuntu <jamie_ubuntu@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/21 21:53:05 by jacarpio          #+#    #+#             */
-/*   Updated: 2026/03/21 21:55:14 by jacarpio         ###   ########.fr       */
+/*   Updated: 2026/03/22 21:06:57 by jamie_ubunt      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

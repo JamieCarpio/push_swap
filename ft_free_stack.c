@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_free_stack.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jacarpio <jacarpio@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: jamie_ubuntu <jamie_ubuntu@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/21 21:53:00 by jacarpio          #+#    #+#             */
-/*   Updated: 2026/03/21 21:55:18 by jacarpio         ###   ########.fr       */
+/*   Updated: 2026/03/22 21:06:16 by jamie_ubunt      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

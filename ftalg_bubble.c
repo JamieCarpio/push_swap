@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ftalg_bubble.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jacarpio <jacarpio@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: jamie_ubuntu <jamie_ubuntu@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/21 21:54:07 by jacarpio          #+#    #+#             */
-/*   Updated: 2026/03/21 21:55:03 by jacarpio         ###   ########.fr       */
+/*   Updated: 2026/03/23 01:34:37 by jamie_ubunt      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,33 +17,26 @@ void	ft_bubble_sort(t_stack **a, t_bench *bench)
 	int	size;
 	int	i;
 	int	swaps;
+	int	j;
 
 	size = ft_stack_size(*a);
-	if (size < 2)
-		return ;
-
-	i = 0;
-	while (i < size)
+	while (size-- > 1)
 	{
 		swaps = 0;
-		// Recorremos el stack hasta el último elemento no ordenado
-		for (int j = 0; j < size - i - 1; j++)
+		i = 0;
+		while (i++ < size)
 		{
 			if ((*a)->index > (*a)->next->index)
 			{
-				ft_sa(a, bench);      // Intercambiar si están desordenados
-				swaps++;
+				ft_sa(a, bench);
+				swaps = 1;
 			}
-			ft_ra(a, bench);          // Rotar al siguiente par
+			ft_ra(a, bench);
 		}
-		// Después de cada pasada, traemos los elementos rotados al inicio
-		for (int k = 0; k < size - i - 1; k++)
+		j = 0;
+		while (j++ < size)
 			ft_rra(a, bench);
-
-		// Si no hubo swaps en toda la pasada, el stack ya está ordenado
-		if (swaps == 0)
-			break;
-
-		i++;
+		if (!swaps)
+			break ;
 	}
 }

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ftalg_chunk.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jacarpio <jacarpio@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: jamie_ubuntu <jamie_ubuntu@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/21 21:54:10 by jacarpio          #+#    #+#             */
-/*   Updated: 2026/03/21 21:55:02 by jacarpio         ###   ########.fr       */
+/*   Updated: 2026/03/23 00:13:47 by jamie_ubunt      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,11 +47,13 @@ static void	ft_push_back(t_stack **a, t_stack **b, t_bench *bench)
 			while (pos-- > 0)
 				ft_rb(b, bench);
 		else
+		{
 			while (pos < size)
 			{
 				ft_rrb(b, bench);
 				pos++;
 			}
+		}
 		ft_pa(a, b, bench);
 	}
 }

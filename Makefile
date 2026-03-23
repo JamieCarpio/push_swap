@@ -9,6 +9,7 @@ CFLAGS = -Wall -Wextra -Werror
 
 SRC = \
 	main.c \
+	mainaux.c \
 	ft_atol.c \
 	ft_is_number.c \
 	ft_strcmp.c \
@@ -32,7 +33,6 @@ SRC = \
 	ftalg_radix.c \
 	ft_benchmark.c 
 
-# 🔥 AQUÍ ESTÁ LA CLAVE
 LIBFT_SRC = $(wildcard libft/*.c)
 FT_PRINTF_SRC = $(wildcard ft_printf/*.c)
 

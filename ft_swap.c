@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_swap.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jacarpio <jacarpio@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: jamie_ubuntu <jamie_ubuntu@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/16 16:12:02 by jacarpio          #+#    #+#             */
-/*   Updated: 2026/03/21 21:55:04 by jacarpio         ###   ########.fr       */
+/*   Updated: 2026/03/23 00:08:22 by jamie_ubunt      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,12 +24,12 @@ void	ft_swap(t_stack **stack)
 	*stack = temp;
 }
 
-void ft_sa(t_stack **a, t_bench *bench)
+void	ft_sa(t_stack **a, t_bench *bench)
 {
-    ft_swap(a);
-    write(1, "sa\n", 3);
-    bench->sa++;
-    bench->total++;
+	ft_swap(a);
+	write(1, "sa\n", 3);
+	bench->sa++;
+	bench->total++;
 }
 
 void	ft_sb(t_stack **stack_b, t_bench *bench)
@@ -37,7 +37,7 @@ void	ft_sb(t_stack **stack_b, t_bench *bench)
 	ft_swap(stack_b);
 	write(1, "sb\n", 3);
 	bench->sb++;
-    bench->total++;
+	bench->total++;
 }
 
 void	ft_ss(t_stack **stack_a, t_stack **stack_b, t_bench *bench)
@@ -46,5 +46,5 @@ void	ft_ss(t_stack **stack_a, t_stack **stack_b, t_bench *bench)
 	ft_swap(stack_b);
 	write(1, "ss\n", 3);
 	bench->ss++;
-    bench->total++;
+	bench->total++;
 }
