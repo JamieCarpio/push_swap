@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_revrotate.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jamie_ubuntu <jamie_ubuntu@student.42.f    +#+  +:+       +#+        */
+/*   By: jacarpio <jacarpio@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/17 20:50:21 by jacarpio          #+#    #+#             */
-/*   Updated: 2026/03/23 00:06:25 by jamie_ubunt      ###   ########.fr       */
+/*   Updated: 2026/03/23 18:42:10 by jacarpio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

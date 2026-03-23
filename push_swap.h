@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   push_swap.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jamie_ubuntu <jamie_ubuntu@student.42.f    +#+  +:+       +#+        */
+/*   By: jacarpio <jacarpio@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/17 21:20:51 by jacarpio          #+#    #+#             */
-/*   Updated: 2026/03/23 01:23:09 by jamie_ubunt      ###   ########.fr       */
+/*   Updated: 2026/03/23 20:19:10 by jacarpio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,11 +72,16 @@ void	ft_rotate(t_stack **stack);
 void	ft_ra(t_stack **stack_a, t_bench *bench);
 void	ft_rb(t_stack **stack_b, t_bench *bench);
 void	ft_rr(t_stack **stack_a, t_stack **stack_b, t_bench *bench);
+void	ft_rotate_to_pos_a(t_stack **a, int pos, t_bench *bench);
 
 void	ft_revrotate(t_stack **stack);
 void	ft_rra(t_stack **stack_a, t_bench *bench);
 void	ft_rrb(t_stack **stack_b, t_bench *bench);
 void	ft_rrr(t_stack **stack_a, t_stack **stack_b, t_bench *bench);
+
+void	ft_smallsort(t_stack **a, t_stack **b, t_bench *bench, int size);
+void	ft_sort_two(t_stack **a, t_bench *bench);
+void	ft_sort_three(t_stack **a, t_bench *bench);
 
 void	ft_bubble_sort(t_stack **a, t_bench *bench);
 void	ft_chunk_sort(t_stack **a, t_stack **b, t_bench *bench);

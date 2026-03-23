@@ -28,10 +28,11 @@ SRC = \
 	ft_rotate.c \
 	ft_revrotate.c \
 	ftalg_adaptive.c \
+	ft_smallsort.c \
 	ftalg_bubble.c \
 	ftalg_chunk.c \
 	ftalg_radix.c \
-	ft_benchmark.c 
+	ft_benchmark.c  
 
 LIBFT_SRC = $(wildcard libft/*.c)
 FT_PRINTF_SRC = $(wildcard ft_printf/*.c)

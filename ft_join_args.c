@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_join_args.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jamie_ubuntu <jamie_ubuntu@student.42.f    +#+  +:+       +#+        */
+/*   By: jacarpio <jacarpio@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/21 23:46:35 by jacarpio          #+#    #+#             */
-/*   Updated: 2026/03/22 21:34:00 by jamie_ubunt      ###   ########.fr       */
+/*   Updated: 2026/03/23 18:42:07 by jacarpio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

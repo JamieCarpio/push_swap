@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_parse_args.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jamie_ubuntu <jamie_ubuntu@student.42.f    +#+  +:+       +#+        */
+/*   By: jacarpio <jacarpio@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/22 15:02:48 by sbouzian          #+#    #+#             */
-/*   Updated: 2026/03/23 01:52:10 by jamie_ubunt      ###   ########.fr       */
+/*   Updated: 2026/03/23 18:42:08 by jacarpio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

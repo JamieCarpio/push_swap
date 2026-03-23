@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_rotate.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jamie_ubuntu <jamie_ubuntu@student.42.f    +#+  +:+       +#+        */
+/*   By: jacarpio <jacarpio@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/17 20:50:21 by jacarpio          #+#    #+#             */
-/*   Updated: 2026/03/23 00:06:55 by jamie_ubunt      ###   ########.fr       */
+/*   Updated: 2026/03/23 19:58:48 by jacarpio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,4 +51,24 @@ void	ft_rr(t_stack **stack_a, t_stack **stack_b, t_bench *bench)
 	write(1, "rr\n", 3);
 	bench->rr++;
 	bench->total++;
+}
+
+void	ft_rotate_to_pos_a(t_stack **a, int pos, t_bench *bench)
+{
+	int	size;
+	int	i;
+
+	size = ft_stack_size(*a);
+	if (pos <= size / 2)
+	{
+		i = 0;
+		while (i++ < pos)
+			ft_ra(a, bench);
+	}
+	else
+	{
+		i = 0;
+		while (i++ < (size - pos))
+			ft_rra(a, bench);
+	}
 }

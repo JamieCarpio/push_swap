@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ftalg_chunk.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jamie_ubuntu <jamie_ubuntu@student.42.f    +#+  +:+       +#+        */
+/*   By: jacarpio <jacarpio@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/21 21:54:10 by jacarpio          #+#    #+#             */
-/*   Updated: 2026/03/23 00:13:47 by jamie_ubunt      ###   ########.fr       */
+/*   Updated: 2026/03/23 20:16:24 by jacarpio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

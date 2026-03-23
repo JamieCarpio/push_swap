@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ftalg_adaptive.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jamie_ubuntu <jamie_ubuntu@student.42.f    +#+  +:+       +#+        */
+/*   By: jacarpio <jacarpio@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/21 21:54:04 by jacarpio          #+#    #+#             */
-/*   Updated: 2026/03/23 00:09:18 by jamie_ubunt      ###   ########.fr       */
+/*   Updated: 2026/03/23 20:16:23 by jacarpio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,15 @@
 
 void	ft_adaptive_sort(t_stack **a, t_stack **b, t_bench *bench)
 {
+	int		size;
 	double	disorder;
 
+	size = ft_stack_size(*a);
+	if (size <= 7)
+	{
+		ft_smallsort(a, b, bench, size);
+		return ;
+	}
 	disorder = ft_disorder(*a);
 	if (disorder < 0.2)
 		ft_bubble_sort(a, bench);

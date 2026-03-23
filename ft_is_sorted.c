@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_is_sorted.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jamie_ubuntu <jamie_ubuntu@student.42.f    +#+  +:+       +#+        */
+/*   By: jacarpio <jacarpio@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/21 21:53:10 by jacarpio          #+#    #+#             */
-/*   Updated: 2026/03/22 21:09:52 by jamie_ubunt      ###   ########.fr       */
+/*   Updated: 2026/03/23 18:42:06 by jacarpio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
